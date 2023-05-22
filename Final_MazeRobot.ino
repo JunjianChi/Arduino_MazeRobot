@@ -89,7 +89,10 @@ void loop()
 
     if (combFlag == 1){
       delay (200); // Needs to be tested in lab; Time to keep turning left/right after finish comb
-      
+      // stop turning left/right
+      digitalWrite(motorpin2, LOW);
+      digitalWrite(motorpin1, LOW);
+      // moving forward
       TurnForward();
       break;
     }
